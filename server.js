@@ -6,14 +6,12 @@ var request = require('request');
 var paths='/api';
 var apiServerHost = 'http://echo.httpkit.com';
 
-var pipe = function(req, res) {
-  var url = apiServerHost + req.baseUrl + req.url;
-  console.log('piped:'+req.baseUrl +req.url);
-  req.pipe(request(url)).pipe(res);
-};
-
 var app = express();  
-app.use(paths, pipe);
+app.use(paths, function(req, res) {
+  var url = apiServerHost + req.baseUrl + req.url;
+  console.log('piped: '+req.baseUrl + req.url);
+  req.pipe(request(url)).pipe(res);
+});
 
 app.use(express.static('.'));
 
