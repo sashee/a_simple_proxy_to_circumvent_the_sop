@@ -6,6 +6,10 @@ For an added benefit, it is compatible with Heroku out-of-the box.
 
 * Live demo: https://a-simple-proxy-sop-sample.herokuapp.com
 
+## Sample code
+
+The sample index.html uses utilizes http://echo.httpkit.com to get back the _user-agent_ header of the request and show it in the page. Since httpkit does not set the CORS headers, an AJAX call directly to it would fail because of the SOP.
+
 ## Usage
 
 Just install the dependencies and start the sample app:
