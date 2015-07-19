@@ -1,5 +1,5 @@
 {
-  "name": "proxy_express",
+  "name": "a_simple_proxy_to_circumvent_the_sop",
   "description": "Proxy+Express",
   "author": "gsashee@gmail.com",
   "dependencies": {
