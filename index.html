@@ -1,0 +1,16 @@
+<html>
+<head>
+	<script>
+		var oReq = new XMLHttpRequest();
+		oReq.onload = function(){
+
+			document.body.innerText=JSON.parse(this.response).headers['user-agent'];
+		};
+		oReq.open("get", "/api/test", true);
+		oReq.send();
+	</script>
+
+</head>
+<body>
+</body>
+</html>

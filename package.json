@@ -1,0 +1,10 @@
+{
+  "name": "proxy_express",
+  "description": "Proxy+Express",
+  "author": "gsashee@gmail.com",
+  "dependencies": {
+    "express": "4.13.x",
+    "request": "2.58.x"
+  },
+  "main":"server.js"
+}
