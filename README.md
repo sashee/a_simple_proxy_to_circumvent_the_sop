@@ -5,6 +5,7 @@ A simple Node.js proxy to aid front-end development with a remote API without CO
 For an added benefit, it is compatible with Heroku out-of-the box.
 
 * Live demo: https://a-simple-proxy-sop-sample.herokuapp.com
+* The associated blog post: https://advancedweb.hu/2015/07/28/a_simple_proxy_to_circumvent_the_sop/
 
 ## Sample code
 
